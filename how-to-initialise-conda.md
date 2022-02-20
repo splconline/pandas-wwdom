@@ -40,7 +40,7 @@ If you like, check the current environment as before with `conda info --envs`.
 Add the required packages:
 
 ```
-conda install pandas xlswriter xlrd openpyxl notebook
+conda install pandas xlsxwriter xlrd openpyxl notebook
 ```
 
 ## Optional: Cookie Cutter
