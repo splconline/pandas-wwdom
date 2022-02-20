@@ -22,16 +22,38 @@ Note that this command was current at 20.02.2022, don't copy-paste it!
 
 A 'base' environment will be created. To see what environment you are in:
 
-
+```
+conda info --envs
+```
 
 Create a separate environment to the base environment (leave the base environment clean, no sure why, the video said so), then activate it.
 
-If you like, check the current environment as before.
+```
+conda create -n wwdom python=3
+conda activate wwdom
+```
+
+If you like, check the current environment as before with `conda info --envs`.
 
 ## 4. Add Packages
 
 Add the required packages:
 
-
+```
+conda install pandas xlswriter xlrd openpyxl notebook
+```
 
 ## Optional: Cookie Cutter
+To automate the creation of a template 'cookie cutter' file structure, first install cookiecutter (note that the [cookiecutter](https://github.com/talkpython/pbp_cookiecutter) page has a different install command - [and here's why](https://snarky.ca/why-you-should-use-python-m-pip/)):
+
+```
+python -m pip install cookiecutter
+```
+
+Then:
+
+```
+cookiecutter https://github.com/talkpython/pbp_cookiecutter
+```
+
+You will then be prompted for the name of the project, directory name then short description
