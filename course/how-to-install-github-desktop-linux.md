@@ -16,3 +16,5 @@ Then install GitHub Desktop:
 ```
 sudo gdebi GitHubDesktop-linux-2.9.6-linux1.deb
 ```
+
+UPDATE 19.03.2022: 2.9.9 confirmed does not work on Linux Mint 20.3, but 2.9.6 (the current version when this readme was first written) works. With 2.9.9 there is a problem with logging on, it just hangs and hangs and hangs.
