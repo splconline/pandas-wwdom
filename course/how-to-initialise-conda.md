@@ -18,6 +18,17 @@ Note that this command was current at 20.02.2022, don't copy-paste it!
 
 (Hint: use tab predictive text to select the file, saves you typing out the whole filename)
 
+Note also that this message comes up right at the end of installation, try it one day:
+
+```
+If you'd prefer that conda's base environment not be activated on startup, 
+   set the auto_activate_base parameter to false: 
+
+conda config --set auto_activate_base false
+```
+
+
+
 ## 3. Create Environment
 
 A 'base' environment will be created. To see what environment you are in:
