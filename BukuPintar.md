@@ -1,0 +1,35 @@
+# Buku Pintar
+
+## Renaming columns
+`pandas.DataFrame.rename(columns={'old_column_name':'new_column_name'})`  
+`pandas.DataFrame.columns = ['your', 'new', 'column', 'names']`  
+`pandas.DataFrame.set_axis(['your', 'new', 'column', 'names'2], axis=1)`  
+(changes the whole set of column headings)
+
+[dataindependent.com/pandas/pandas-change-column-names-3-methods/](https://dataindependent.com/pandas/pandas-change-column-names-3-methods/)
+
+## Dropping columns
+`del df['Locations']`  
+`df.drop(labels='Locations', 'Founder'], axis=1)`  
+`df.drop(columns=['Founder', 'Locations'])`  
+(There's more)
+
+[www.machinelearningplus.com/pandas/pandas-drop-column-using-dataframe-drop/](https://www.machinelearningplus.com/pandas/pandas-drop-column-using-dataframe-drop/)
+
+## Listing columns
+
+`df.columns`
+
+
+[www.machinelearningplus.com/pandas/pandas-drop-column-using-dataframe-drop/](https://www.machinelearningplus.com/pandas/pandas-drop-column-using-dataframe-drop/)
+
+## Doing an anti-join
+Do an outer join first:
+
+`df = pd.merge(df1,df2, how='outer', left_on='key', right_on='key', indicator = True)`
+
+The `indicator = True` adds a new column called `_merge` and populates it with either  `both`, `left_only` or `right_only`.
+
+Now to e.g find the left anti-join:
+
+`df.loc[df['_merge']!='left_only']`
