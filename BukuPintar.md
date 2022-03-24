@@ -35,3 +35,6 @@ Now to e.g find the left anti-join:
 `df.loc[df['_merge']!='left_only']`
 
 [predictivehacks.com/?all-tips=anti-joins-with-pandas](https://predictivehacks.com/?all-tips=anti-joins-with-pandas)
+
+## Exporting without the index
+`dfleft.to_csv('hurrah2.csv',index=False)`
