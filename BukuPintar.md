@@ -43,3 +43,28 @@ Now to e.g find the left anti-join:
 `df.sort_values(by=['Year','Brand'], inplace=True)`
 
 [datatofish.com/sort-pandas-dataframe/](https://datatofish.com/sort-pandas-dataframe/)
+
+## Multi-argument functions on dataframes
+```
+>>> def fxy(x, y):
+...     return x * y
+
+>>> df['newcolumn'] = df.apply(lambda x: fxy(x['A'], x['B']), axis=1)
+>>> df
+    A   B  newcolumn
+0  10  20        200
+1  20  30        600
+2  30  10        300
+```
+[stackoverflow.com/questions/19914937/applying-function-with-multiple-arguments-to-create-a-new-pandas-column](https://stackoverflow.com/questions/19914937/applying-function-with-multiple-arguments-to-create-a-new-pandas-column)
+
+## Single argument function on dataframes
+```
+def percent(a):
+    a = a.replace('%','')
+    return float(a)/100
+    
+df['pct_to_target']=df['pct_to_target'].apply(percent)
+```
+
+From Chapter 7 of Talk Python Excel to Python course.
