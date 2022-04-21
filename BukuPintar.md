@@ -68,3 +68,14 @@ df['pct_to_target']=df['pct_to_target'].apply(percent)
 ```
 
 From Chapter 7 of Talk Python Excel to Python course.
+
+## Extacting things in brackets
+```
+df['Allocate'] = df['Notes'].str.extract(r'\((.*?)\)', expand=False).str.strip()
+```
+
+## Changing characters
+```
+df["Times"].str.replace(")","")
+df["Times"].str.replace("(","")
+```
