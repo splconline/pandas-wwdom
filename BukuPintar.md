@@ -74,6 +74,12 @@ From Chapter 7 of Talk Python Excel to Python course.
 df['Allocate'] = df['Notes'].str.extract(r'\((.*?)\)', expand=False).str.strip()
 ```
 
+or
+
+```
+notes[notes.find("(")+1:notes.find(")")]
+```
+
 ## Changing characters
 ```
 df["Times"].str.replace(")","")
