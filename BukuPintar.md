@@ -1,4 +1,4 @@
-# Buku Pintar
+ Book Pintar
 
 ## Renaming columns
 `pandas.DataFrame.rename(columns={'old_column_name':'new_column_name'})`  
@@ -8,7 +8,7 @@
 
 [dataindependent.com/pandas/pandas-change-column-names-3-methods/](https://dataindependent.com/pandas/pandas-change-column-names-3-methods/)
 
-## Dropping columns
+## Dropping columns 
 `del df['Locations']`  
 `df.drop(labels='Locations', 'Founder'], axis=1)`  
 `df.drop(columns=['Founder', 'Locations'])`  
