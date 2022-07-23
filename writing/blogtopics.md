@@ -13,4 +13,8 @@
 * Using The Last Remnants of Moisturiser
 * Manual WordPress Migration: Look Ma, No Plugins!
 * Using Your iPad for Guitar Effects
+* Google Apps Script 101
+* Telstra unlocking
+* Practical Apps Script: Find and Replace
+* Practical Apps Script: Chronological to Class
 
