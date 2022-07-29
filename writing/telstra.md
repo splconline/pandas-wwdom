@@ -39,7 +39,7 @@ Yes, wait for that email to arrive. When it does, it will look something like th
 So now we're on to the final step.
 
 ## Unlock Your Phone
-Put a non-Telstra SIM card in your phone (if you don't already have one, borrow one from a friend) and switch it on. As before, you will be prompted to enter a code.
+Put a non-Telstra SIM card in your phone (if you don't already have one, borrow one from a friend, for unlocking purposes) and switch it on. As before, you will be prompted to enter a code.
 
 Now that you have a code from the Telstra email, enter those digits.
 
